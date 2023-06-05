@@ -71,7 +71,15 @@ In order to reset data push button `Reset to defaults` on main page or just call
 
 Embedded this app [websocket-server-chat](https://github.com/volodymyr-kryvoshapov/websocket-server-chat)
 
-In order to test write simple client:
+Local URL
+
+`const ws = new WebSocket('ws://localhost:4000/chat');`
+
+Example app URL
+
+`const ws = new WebSocket('ws://mock-api-5678.nw.r.appspot.com/chat');`
+
+Simple client example:
 
 ```javascript
 const ws = new WebSocket('ws://localhost:4000/chat');
