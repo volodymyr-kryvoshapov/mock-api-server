@@ -20,6 +20,7 @@ Default resources:
 - `/waiters`
 - `/dishes`
 - `/orders`
+- `/reset`
 
 # Example
 
@@ -37,7 +38,23 @@ By default, it will run http://localhost:4000
 
 # How to use
 
-See [JSON Server Routes](https://github.com/typicode/json-server#routes)
+```
+Read
+GET    /todos
+GET    /todos/1
+
+Create
+POST   /todos
+
+Update
+PUT    /todos/1
+PATCH  /todos/1
+
+Delete
+DELETE /todos/1
+```
+
+For more details (filtering, sorting, paginate, slicing, full-text search) see [JSON Server Routes](https://github.com/typicode/json-server#routes)
 
 In order to create custom resources or modify existing edit file:
 
@@ -45,7 +62,7 @@ In order to create custom resources or modify existing edit file:
 
 Do not forget restart server.
 
-In order to reset data push button `Reset to defaults` on main page or just call `/reset`
+In order to reset data push button `Reset to defaults` on main page or just call resource `/reset`
 
 
 
