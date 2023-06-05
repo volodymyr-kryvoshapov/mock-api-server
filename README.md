@@ -1,6 +1,6 @@
 # Mock API Server
 
-In memory REST server for mock and prototyping.
+In memory REST server for mock,  prototyping and education purposes.
 
 Build on top of [JSON Server](https://github.com/typicode/json-server) and [Faker](https://github.com/faker-js/faker).
 
