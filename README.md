@@ -2,7 +2,7 @@
 
 In memory REST server for mock and prototyping.
 
-Build on top of [JSON Server](https://github.com/typicode/json-server#routes) and [Faker](https://github.com/faker-js/faker).
+Build on top of <a href="https://github.com/typicode/json-server" target="_blank">JSON Server</a> and <a href="https://github.com/faker-js/faker" target="_blank">Faker</a>.
 
 The main reason of this project is:
 - Add ability to auto generate data with Faker for provided resources.
@@ -12,7 +12,7 @@ The main reason of this project is:
 
 # Example
 
-[My own instance of Mock API Server in Google Cloud](https://mock-api-5678.nw.r.appspot.com/)
+<a href="https://mock-api-5678.nw.r.appspot.com" target="_blank">My own instance of Mock API Server in Google Cloud</a>
 
 # Install
 
@@ -26,7 +26,7 @@ By default, it will run http://localhost:4000
 
 # How to use
 
-See [JSON Server Routes](https://github.com/typicode/json-server#routes)
+See <a href="https://github.com/typicode/json-server#routes" target="_blank">JSON Server Routes</a>
 
 Default resources:
 
@@ -58,7 +58,7 @@ See `./config.js`
 
 # Deploy with Google Cloud SDK
 
-[Download Cloud SDK](https://cloud.google.com/sdk/docs/install-sdk)
+<a href="https://cloud.google.com/sdk/docs/install-sdk" target="_blank">Download Cloud SDK</a>
 
 
 Initialize your SDK
