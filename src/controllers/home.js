@@ -14,6 +14,6 @@ module.exports.home = (req, res) => {
       ${links}
       <h2>Options:</h2>
       <div>Resource Items Limit: ${RESOURCE_ITEMS_LIMIT}</div>
-      <div><button onclick="fetch('/reset'); window.location.reload();">Reset to defaults</button></div>
+      <div><button onclick="fetch('/reset').then(() => window.location.reload())">Reset to defaults</button></div>
     `)
 }
