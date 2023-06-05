@@ -9,6 +9,7 @@ The main reason of this project is:
 - Create custom resources
 - Limit number of resource items
 - Reset data to defaults if this server users post some broken resources data.
+- Contain simple websocket 'chat' application.
 
 Default resources:
 
@@ -20,7 +21,8 @@ Default resources:
 - `/waiters`
 - `/dishes`
 - `/orders`
-- `/reset`
+- `/reset` - reset resources to defaults
+- `/chat` - websocket chat app
 
 # Example
 
@@ -65,6 +67,33 @@ Do not forget restart server.
 In order to reset data push button `Reset to defaults` on main page or just call resource `/reset`
 
 
+# Websocket 'Chat' app
+
+Embedded this app [websocket-server-chat](https://github.com/volodymyr-kryvoshapov/websocket-server-chat)
+
+In order to test write simple client:
+
+```javascript
+const ws = new WebSocket('ws://localhost:4000/chat');
+
+ws.onopen = () => {
+  console.log('Connection with server was established')
+  ws.send('New client connected');
+};
+
+ws.onclose = () => {
+  console.log('Connection with server was closed')
+};
+
+ws.onmessage = (event) => {
+  console.log('received: %s', event.data);
+};
+
+ws.onerror = (error) => {
+  console.log('Error', error);
+};
+```
+
 
 # Config
 
@@ -72,6 +101,7 @@ See `./config.js`
 
 - PORT (4000 default) - You can change default port in `./config.js` or providing `process.env.PORT` env variable
 - RESOURCE_ITEMS_LIMIT (50 default) - The maximum amount of items in every resource, max 50 todos, max 50 contacts, etc.
+- WS_CHAT_ROUTE ('/chat' default) - route for websocket chat app
 
 # Deploy with Google Cloud SDK
 

@@ -15,7 +15,8 @@
   "license": "ISC",
   "dependencies": {
     "@faker-js/faker": "8.0.2",
-    "json-server": "0.17.3"
+    "json-server": "0.17.3",
+    "ws": "^8.13.0"
   },
   "engines": {
     "node": "18.x.x"
