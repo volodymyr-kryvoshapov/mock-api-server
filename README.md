@@ -2,7 +2,7 @@
 
 In memory REST server for mock and prototyping.
 
-Build on top of <a href="https://github.com/typicode/json-server" target="_blank">JSON Server</a> and <a href="https://github.com/faker-js/faker" target="_blank">Faker</a>.
+Build on top of [JSON Server](https://github.com/typicode/json-server) and [Faker](https://github.com/faker-js/faker).
 
 The main reason of this project is:
 - Add ability to auto generate data with Faker for provided resources.
@@ -10,9 +10,20 @@ The main reason of this project is:
 - Limit number of resource items
 - Reset data to defaults if this server users post some broken resources data.
 
+Default resources:
+
+- `/todos`
+- `/contacts`
+- `/stickers`
+- `/students`
+- `/tables`
+- `/waiters`
+- `/dishes`
+- `/orders`
+
 # Example
 
-<a href="https://mock-api-5678.nw.r.appspot.com" target="_blank">My own instance of Mock API Server in Google Cloud</a>
+[My own instance of Mock API Server in Google Cloud](https://mock-api-5678.nw.r.appspot.com/)
 
 # Install
 
@@ -26,18 +37,7 @@ By default, it will run http://localhost:4000
 
 # How to use
 
-See <a href="https://github.com/typicode/json-server#routes" target="_blank">JSON Server Routes</a>
-
-Default resources:
-
-- `/todos`
-- `/contacts`
-- `/stickers`
-- `/students`
-- `/tables`
-- `/waiters`
-- `/dishes`
-- `/orders`
+See [JSON Server Routes](https://github.com/typicode/json-server#routes)
 
 In order to create custom resources or modify existing edit file:
 
@@ -58,7 +58,7 @@ See `./config.js`
 
 # Deploy with Google Cloud SDK
 
-<a href="https://cloud.google.com/sdk/docs/install-sdk" target="_blank">Download Cloud SDK</a>
+[Download Cloud SDK](https://cloud.google.com/sdk/docs/install-sdk)
 
 
 Initialize your SDK
