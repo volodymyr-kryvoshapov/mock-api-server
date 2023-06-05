@@ -1,3 +1,12 @@
 # mock-api-server
 
-Several test urls REST server
+In memory REST server for mock and prototyping
+
+Resources:
+
+- todos
+- contacts
+- tables
+- waiters
+- dishes
+- orders

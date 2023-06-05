@@ -1,10 +1,14 @@
 {
-  "name": "server",
+  "name": "mock-api-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Several test urls REST server",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:volodymyr-kryvoshapov/mock-api-server.git"
   },
   "keywords": [],
   "author": "",
