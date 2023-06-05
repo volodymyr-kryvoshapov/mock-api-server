@@ -120,5 +120,4 @@ Deploy to App Engine
 # Need todo
 
 - Authentication
-- Websockets
 - Random Errors
