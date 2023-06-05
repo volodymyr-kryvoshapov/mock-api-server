@@ -86,3 +86,9 @@ Initialize your SDK
 Deploy to App Engine
 
 `gcloud app deploy`
+
+# Todo
+
+- Authentication
+- Websockets
+- Random Errors
