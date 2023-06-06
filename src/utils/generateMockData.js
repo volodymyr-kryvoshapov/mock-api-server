@@ -63,7 +63,7 @@ module.exports.generateMockData = function (seedNum) {
       waiterId: faker.number.int({ min: 1, max: waitersCount }),
       tableId: faker.number.int({ min: 1, max: tablesCount }),
       dishes: multiple((i) => ({
-        a: i,
+        id: i,
         dishId: faker.number.int({ min: 1, max: dishesCount }),
         count: faker.number.int({ min: 1, max: 5 }),
       }), { min: 2, max: 5 }),
