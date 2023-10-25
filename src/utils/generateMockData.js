@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
-const { faker } = require('@faker-js/faker');
-const { multiple } = require('./multiple.js');
+const { faker } = require('@faker-js/faker')
+const { multiple } = require('./multiple.js')
 
 module.exports.generateMockData = function (seedNum) {
   const tablesCount = 15
@@ -16,7 +16,8 @@ module.exports.generateMockData = function (seedNum) {
     todos: multiple((id) => ({
       id,
       title: faker.lorem.sentence({ min: 1, max: 5 }),
-      done: faker.datatype.boolean()
+      done: faker.datatype.boolean(),
+      description: faker.lorem.sentence({ min: 10, max: 50 }),
     }), 10),
     contacts: multiple((id) => {
       const firstName = faker.person.firstName()
@@ -68,5 +69,33 @@ module.exports.generateMockData = function (seedNum) {
         count: faker.number.int({ min: 1, max: 5 }),
       }), { min: 2, max: 5 }),
     }), 5),
+    users: multiple((id) => {
+      const firstName = faker.person.firstName()
+      const lastName = faker.person.lastName()
+
+      return {
+        id,
+        'name': `${firstName} ${lastName}`,
+        'username': faker.internet.userName({ lastName }),
+        'email': faker.internet.email({ firstName, lastName }),
+        'address': {
+          'street': faker.location.street(),
+          'suite': `Apt. ${faker.location.buildingNumber()}`,
+          'city': faker.location.city(),
+          'zipcode': faker.location.zipCode(),
+          'geo': {
+            'lat': faker.location.latitude(),
+            'lng': faker.location.longitude(),
+          }
+        },
+        'phone': faker.phone.number('###-##-##'),
+        'website': faker.internet.domainName(),
+        'company': {
+          'name': faker.company.name(),
+          'catchPhrase': faker.company.catchPhrase(),
+          'bs': faker.company.buzzPhrase(),
+        }
+      }
+    }, 10),
   }
 }
